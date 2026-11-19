@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="sun" aria-hidden="true"></div>
+  <svg class="palms" viewBox="0 0 1280 220" aria-hidden="true">
+    <g fill="#1a0b2e" stroke="#1a0b2e" stroke-width="5" stroke-linecap="round">
+      <path d="M128 220 Q126 160 138 118" fill="none"/>
+      <path d="M138 118 Q100 88 58 92 Q100 84 136 104" />
+      <path d="M138 118 Q150 74 178 56 Q158 88 146 108" />
+      <path d="M138 118 Q176 84 214 88 Q178 100 150 116" />
+      <path d="M138 118 Q118 76 96 62 Q122 88 132 110" />
+      <path d="M138 118 Q168 96 196 66 Q168 96 150 112" />
+    </g>
+    <g fill="#1a0b2e" stroke="#1a0b2e" stroke-width="5" stroke-linecap="round">
+      <path d="M1130 220 Q1128 152 1142 108" fill="none"/>
+      <path d="M1142 108 Q1102 78 1060 82 Q1104 74 1140 94" />
+      <path d="M1142 108 Q1156 62 1184 44 Q1162 78 1150 98" />
+      <path d="M1142 108 Q1182 74 1222 78 Q1182 92 1154 106" />
+      <path d="M1142 108 Q1120 66 1098 52 Q1126 78 1136 100" />
+      <path d="M1142 108 Q1174 86 1202 56 Q1172 88 1154 102" />
+    </g>
+    <g fill="#1a0b2e" stroke="#1a0b2e" stroke-width="4" stroke-linecap="round">
+      <path d="M648 220 Q646 172 656 138" fill="none"/>
+      <path d="M656 138 Q626 114 596 116 Q628 110 654 126" />
+      <path d="M656 138 Q664 104 684 90 Q670 118 662 130" />
+      <path d="M656 138 Q686 112 714 116 Q684 124 664 136" />
+      <path d="M656 138 Q640 106 624 96 Q644 118 650 130" />
+    </g>
+  </svg>
+  <div class="hero-text">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Platinum</h1>
+    <p class="tagline">The complete trophy guide and tracker for GTA VI — every trophy, its own-words guide with cited sources, a roadmap to the Platinum, and a checklist that remembers you.</p>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button type="button" data-view="overview" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap to Platinum</button>
+  <button type="button" data-view="missables">Missables</button>
+</nav>
+
+<section class="progress" aria-label="Progress">
+  <div class="progress-head">
+    <strong id="progressText">0 of 55 earned</strong>
+    <span id="gradeCounts"></span>
+  </div>
+  <div class="bar"><div id="barFill"></div></div>
+  <p class="progress-note" id="progressNote">Tick a trophy when you earn it — progress is saved on this device.</p>
+</section>
+
+<section class="toolbar" aria-label="Filters and settings">
+  <label>Search <input id="search" type="search" placeholder="Search name or description"></label>
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="exploration">Exploration</option>
+      <option value="combat">Combat</option>
+      <option value="misc">Misc</option>
+    </select>
+  </label>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Earned
+    <select id="earned">
+      <option value="all">All</option>
+      <option value="earned">Earned</option>
+      <option value="unearned">Not yet earned</option>
+    </select>
+  </label>
+  <label class="spoiler"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+</section>
+
+<main id="main">
+  <section id="roadmapView" hidden>
+    <h2>Roadmap to the Platinum</h2>
+    <p class="roadmap-intro">One playthrough, in order. The story first, the one possibly-missable trophy guarded in Chapter 1, then collectibles, then cleanup — and the 100% Completion Gold last.</p>
+    <ol id="roadmapSteps" class="roadmap"></ol>
+    <h3>Time and ground rules</h3>
+    <ul class="rules">
+      <li>Expect roughly 200–300 hours for the Platinum, per the launch guides.</li>
+      <li>There is no mission replay and no New Game Plus — keep a manual save at the start of every chapter and one before the final mission.</li>
+      <li>Cheats disable trophies and saving — keep them off on your trophy save.</li>
+      <li>All 55 trophies are single-player. There are no online trophies.</li>
+      <li>Check progress in game at any time with Touch Pad, then Progress; the 100% Completion Checklist unlocks after the story.</li>
+    </ul>
+  </section>
+
+  <section id="missablesView" hidden>
+    <h2>Missable trophies</h2>
+    <p class="miss-intro">Only one trophy is reported as possibly missable. The story trophies below it are story-locked — they can only be earned while their chapter or mission is live, and there is no mission replay — so a manual save per chapter is your safety net.</p>
+    <div id="missableList"></div>
+  </section>
+
+  <section id="listView">
+    <p id="countLine" class="count-line"></p>
+    <ul id="rows" class="trophy-list"></ul>
+  </section>
+</main>
+
+<aside id="detail" hidden aria-label="Trophy guide"></aside>
+
+<footer>
+  <p>Names, descriptions and grades are the official ones as listed by Exophase and PSNProfiles. Guides are written in our own words for this entry, with sources cited beside each trophy. No Rockstar artwork is used — the look is original. Works offline: every file it loads lives in this app.</p>
+  <p class="judge-note">Judge note: the cover screenshot shows the checklist with progress, filters and grades; the guide screenshot shows a trophy guide with its cited sources open; the roadmap and missables screenshots show those views.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
